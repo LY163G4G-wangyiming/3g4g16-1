@@ -1,0 +1,14 @@
+services.msc 进入服务 启动....Listener,....ORCl
+sqlplus
+三种连接方式：
+sys as sysdba/123  超级管理员
+system/123   管理员
+scott/tigger   用户
+select name from v$database;  查询系统视图，超级管理员使用。
+show sga  查看SGA大小 管理员使用
+查看物理文件所在使用路径：管理员登陆
+  select name from v$controlfile 
+  select member from v$logfile
+  select name from v$datafile
+Oracle 逻辑结构  区：
+select* from dba_extents;
